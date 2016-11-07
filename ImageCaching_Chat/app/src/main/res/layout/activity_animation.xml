@@ -10,7 +10,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_animation"
     android:id="@+id/animate_root"
-    tools:context="com.apppartner.androidprogrammertest.AnimationActivity">
+    tools:context="com.arvind.chatandanimate.AnimationActivity">
 
     <include
         android:id="@+id/animation_toolbar_layout"
@@ -28,7 +28,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginStart="38dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="38dp"
@@ -51,6 +51,7 @@
             android:paddingTop="8dp"
             android:textColor="@android:color/black"
             android:maxLines="10"
+            android:text="@string/animate_description"
             android:gravity="center"
             android:textSize="16sp"
             android:id="@+id/tv_animation_text" />

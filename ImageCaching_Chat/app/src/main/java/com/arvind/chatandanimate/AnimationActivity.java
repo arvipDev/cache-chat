@@ -1,4 +1,4 @@
-package com.apppartner.androidprogrammertest;
+package com.arvind.chatandanimate;
 
 import android.content.ClipData;
 import android.content.res.AssetManager;
@@ -12,8 +12,8 @@ import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.apppartner.androidprogrammertest.controllers.CustomToolbarSvc;
-import com.apppartner.androidprogrammertest.models.MachinatoFont;
+import com.arvind.chatandanimate.controllers.CustomToolbarSvc;
+import com.arvind.chatandanimate.models.MachinatoFont;
 
 public class AnimationActivity extends AppCompatActivity {
 
@@ -32,8 +32,6 @@ public class AnimationActivity extends AppCompatActivity {
         iv_animation_icon.setOnDragListener(new MyDragListener());
 
         TextView tv_animation_text = (TextView) findViewById(R.id.tv_animation_text);
-        tv_animation_text.setText("Drag the android icon and drop it where ever you want, " +
-                "the logo returns to its initial position");
         tv_animation_text.setTypeface(MachinatoFont.getExtraLight(manage));
         TextView tv_animation_text_bold = (TextView) findViewById(R.id.tv_animation_text_bold);
         tv_animation_text_bold.setTypeface(MachinatoFont.getSemiBold(manage));
