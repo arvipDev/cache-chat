@@ -32,9 +32,8 @@ public class AnimationActivity extends AppCompatActivity {
         iv_animation_icon.setOnDragListener(new MyDragListener());
 
         TextView tv_animation_text = (TextView) findViewById(R.id.tv_animation_text);
-        tv_animation_text.setText("Animate the App Partner icon. Make it fade to 0% alpha " +
-                "and then to 100% alpha when the fade button is pressed. Allow it to be dragged around " +
-                "the screen by touching it and dragging.");
+        tv_animation_text.setText("Drag the bug and drop it where ever you want, " +
+                "the logo returns to its initial position");
         tv_animation_text.setTypeface(MachinatoFont.getExtraLight(manage));
         TextView tv_animation_text_bold = (TextView) findViewById(R.id.tv_animation_text_bold);
         tv_animation_text_bold.setTypeface(MachinatoFont.getSemiBold(manage));
@@ -86,18 +85,18 @@ public class AnimationActivity extends AppCompatActivity {
                 case DragEvent.ACTION_DRAG_STARTED:
                     break;
                 case DragEvent.ACTION_DRAG_ENTERED:
-                    v.setBackgroundResource(R.drawable.ic_apppartner);
+                    v.setBackgroundResource(R.drawable.ic_animate);
                     break;
                 case DragEvent.ACTION_DRAG_EXITED:
-                    v.setBackgroundResource(R.drawable.ic_apppartner);
+                    v.setBackgroundResource(R.drawable.ic_animate);
                     break;
                 case DragEvent.ACTION_DROP:
-                    v.setBackgroundResource(R.drawable.ic_apppartner);
+                    v.setBackgroundResource(R.drawable.ic_animate);
                     break;
                 case DragEvent.ACTION_DRAG_ENDED:
-                    v.setBackgroundResource(R.drawable.ic_apppartner);
+                    v.setBackgroundResource(R.drawable.ic_animate);
                 default:
-                    v.setBackgroundResource(R.drawable.ic_apppartner);
+                    v.setBackgroundResource(R.drawable.ic_animate);
                     break;
             }
             v.setVisibility(View.VISIBLE);
