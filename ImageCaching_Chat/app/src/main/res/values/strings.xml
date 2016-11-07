@@ -10,9 +10,10 @@
     <string name="profile_image">profile_image</string>
     <string name="login_hint">username</string>
     <string name="pwd_hint">password</string>
+    <string name="animate_description">Drag the android icon and drop it where ever you want, the logo returns to its initial position</string>
     <string name="alert_dialog_button">OK</string>
     <string name="animationicon">animationIcon</string>
-    <string name="tv_animation_bold">BONUS POINTS FOR CREATIVITY.</string>
+    <string name="tv_animation_bold">HIT THE FADE BUTTON AND SEE WHAT HAPPENS.</string>
     <string name="title_activity_animation">AnimationActivity</string>
 
 </resources>
